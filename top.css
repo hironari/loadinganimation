@@ -24,7 +24,10 @@
 .logo{
   width: 266px;
   height: 246px;
-  position: relative;
+  position: fixed;
+  display: flex; /* Flexboxを使用 */
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
 }
 
 

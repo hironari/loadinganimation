@@ -21,13 +21,10 @@
 .logo {
   width: 266px;
   height: 246px;
-  position: absolute; /* 絶対位置を指定 */
-  top: 50%; /* 親要素の高さの50% */
-  left: 50%; /* 親要素の幅の50% */
-  transform: translate(-50%, -50%); /* 自身の幅と高さの50%分移動 */
   display: flex; /* Flexboxを使用 */
   justify-content: center; /* 水平方向の中央揃え */
   align-items: center; /* 垂直方向の中央揃え */
+  position: relative; /* 相対位置を指定 */
 }
 
 .logotype {

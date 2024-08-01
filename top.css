@@ -33,8 +33,8 @@
   height: 80px;
   z-index: 9999;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 165px;
+  left:-80px;
 }
 
 .spinner {

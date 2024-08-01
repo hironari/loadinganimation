@@ -21,10 +21,10 @@
 .logo {
   width: 266px;
   height: 246px;
-  display: flex; /* Flexboxを使用 */
-  justify-content: center; /* 水平方向の中央揃え */
-  align-items: center; /* 垂直方向の中央揃え */
-  position: relative; /* 相対位置を指定 */
+  position: fixed; /* 相対位置を指定 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logotype {
@@ -44,8 +44,7 @@
   background-color: #ffea00;
   border-radius: 100%;
   animation: sk-scaleout 1.0s ease-in-out forwards;
-  top: -165px;
-  left: 80px;
+
   /* アニメーションを一度だけ実行し、終了後にその状態を維持します。 */
 }
 

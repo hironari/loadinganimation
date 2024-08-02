@@ -19,40 +19,35 @@
 }
 
 .logo {
-  width: 13.854166666666668 vw;
-  height:12.812499999999998 vw;
+  width: 26.6vw; /* 266pxをvwに変換 */
+  height: 24.6vw; /* 246pxをvwに変換 */
   position: fixed; /* 相対位置を指定 */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
 }
 
 .logotype {
   background-image: url(img/logotype.png);
-  width: 11.25 vw;
-  height: 4.166666666666666 vw;
+  width: 21.6vw; /* 216pxをvwに変換 */
+  height: 8vw; /* 80pxをvwに変換 */
   z-index: 9999;
   position: absolute;
-  top: 5.208333333333334 vw;
-  left:-2.083333333333333 vw;
+  top: 10vw; /* 100pxをvwに変換 */
+  left: -4vw; /* 40pxをvwに変換 */
   background-repeat: no-repeat;
 }
 
 .spinner {
   position: absolute;
-  width: 10 vw;
-  height: 10 vw;
+  width: 19.2vw; /* 192pxをvwに変換 */
+  height: 19.2vw; /* 192pxをvwに変換 */
   background-color: #ffea00;
   border-radius: 100%;
-  top:-3.125 vw;
-  left:2.083333333333333 vw;
+  top: -6vw; /* 60pxをvwに変換 */
+  left: 4vw; /* 40pxをvwに変換 */
   animation: sk-scaleout 1.0s ease-in-out forwards;
 }
-
- 
-
-
 
 /* Loading Animation */
 @keyframes sk-scaleout {

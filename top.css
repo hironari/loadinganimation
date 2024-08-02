@@ -73,9 +73,10 @@
 }
 
 .loaded_spinner {
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(0, -100px);
+  transform: translate(0, 10px) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: all 10s;
 }
 
 

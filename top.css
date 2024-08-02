@@ -19,35 +19,39 @@
 }
 
 .logo {
-  width: 26.6vw; /* 266pxをvwに変換 */
-  height: 24.6vw; /* 246pxをvwに変換 */
+  width: 13.3vw; /* 266pxをvwに変換 */
+  height: 13.3vw; /* 246pxをvwに変換 */
   position: fixed; /* 相対位置を指定 */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 
 .logotype {
   background-image: url(img/logotype.png);
-  width: 21.6vw; /* 216pxをvwに変換 */
-  height: 8vw; /* 80pxをvwに変換 */
+  width: 10.8vw; /* 216pxをvwに変換 */
+  height: 4vw; /* 80pxをvwに変換 */
   z-index: 9999;
   position: absolute;
-  top: 10vw; /* 100pxをvwに変換 */
-  left: -4vw; /* 40pxをvwに変換 */
+  top: 0vw; /* 100pxをvwに変換 */
+  left: 0vw; /* 40pxをvwに変換 */
   background-repeat: no-repeat;
   background-size: contain; 
+  transition: all 10s;
+
 }
 
 .spinner {
   position: absolute;
-  width: 19.2vw; /* 192pxをvwに変換 */
-  height: 19.2vw; /* 192pxをvwに変換 */
+  width: 9.6vw; /* 192pxをvwに変換 */
+  height: 9.6vw; /* 192pxをvwに変換 */
   background-color: #ffea00;
   border-radius: 100%;
-  top: -6vw; /* 60pxをvwに変換 */
-  left: 4vw; /* 40pxをvwに変換 */
+  top: 0vw; /* 60pxをvwに変換 */
+  left: 0vw; /* 40pxをvwに変換 */
   animation: sk-scaleout 1.0s ease-in-out forwards;
+  transition: all 10s;
 }
 
 /* Loading Animation */
@@ -67,6 +71,13 @@
   opacity: 0;
   visibility: hidden;
 }
+
+.loaded_spinner {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, -100px);
+}
+
 
 /* Contents Styling */
 .gallery {

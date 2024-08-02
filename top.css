@@ -36,6 +36,7 @@
   top: 10vw; /* 100pxをvwに変換 */
   left: -4vw; /* 40pxをvwに変換 */
   background-repeat: no-repeat;
+  background-size: contain; 
 }
 
 .spinner {

@@ -46,11 +46,12 @@
   border-radius: 100%;
   top: -60px;
   left:40px;
-}
   animation: sk-scaleout 1.0s ease-in-out forwards;
-
-  /* アニメーションを一度だけ実行し、終了後にその状態を維持します。 */
 }
+
+ 
+
+
 
 /* Loading Animation */
 @keyframes sk-scaleout {

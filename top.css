@@ -48,7 +48,7 @@
   border-radius: 100%;
   top: 0vw; /* 60pxをvwに変換 */
   left: 0vw; /* 40pxをvwに変換 */
-
+  animation: sk-scaleout 1.0s ease-in-out forwards;
   transition: all 10s;
 }
 

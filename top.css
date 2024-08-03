@@ -70,13 +70,13 @@
 .loaded {
   opacity: 0;
   visibility: hidden;
-  transform: translate(0, 1000px) ;
 }
 
 .loaded_spinner {
   transition: all 10s ;
   opacity: 0 ;
   visibility: hidden ;
+  transform:translate(0,-1000px);
 }
 
 

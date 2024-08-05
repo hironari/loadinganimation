@@ -9,12 +9,10 @@ window.onload = function() {
 
 
   // クラス 'spinner' の要素に対してクラスを追加
-  const spinnerElements = document.getElementsByClassName('spinner');
-  for (let i = 0; i < spinnerElements.length; i++) {
-    spinnerElements[i].addEventListener('animationend', () => {
-      spinnerElements[i].classList.add('loaded_spinner');
-    });
-  }
+  const spinnerElement = document.querySelector('.spinner');
+  spinnerElement.addEventListener('animationend', () => {
+    spinnerElement.classList.add('loaded_spinner');
+  });
 
   // クラス 'logotype' の要素に対してクラスを追加
   const logotypeElements = document.getElementsByClassName('logotype');

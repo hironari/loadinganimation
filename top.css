@@ -48,7 +48,7 @@
   border-radius: 100%;
   top: 0vw; /* 60pxをvwに変換 */
   left: 0vw; /* 40pxをvwに変換 */
-  animation: sk-scaleout 1.0s ease-in-out;
+  animation: sk-scaleout 1.0s ease-in-out forwards;
   transition: all 10s;
 }
 
@@ -64,25 +64,45 @@
   }
 }
 
+
+
+.loaded {
+  transition: all 10s;
+  opacity: 0;
+  visibility: hidden;
+  animation: loaded00 1.0s ease-in-out forwards;
+  transition: all 10s;
+}
+
+@keyframes loaded00 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 .loaded_spinner {
   transition: all 10s;
   opacity: 0;
   visibility: hidden;
   animation: spinner00 1.0s ease-in-out forwards;
+  transition: all 10s;
 }
 
-/* Loading Animation */
+
+
 @keyframes spinner00 {
   0% {
-    opacity: 0;
-    transform: scale(0);
+    opacity: 1;
+    transform: translateY(0);
   }
   100% {
-    transform: scale(1.0);
-    opacity: 1;
+    opacity: 0;
+    transform: translateY(-1000px);
   }
-}
-
 
 
 /* Contents Styling */

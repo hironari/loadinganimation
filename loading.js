@@ -1,9 +1,12 @@
 window.onload = function() {
-  // ID 'loading' の要素に対してクラスを追加
-  const loadingElement = document.getElementById('loading');
-  if (loadingElement) {
-    loadingElement.classList.add('loaded');
-  }
+
+  setTimeout(() => {
+    const loadingElement = document.getElementById('loading');
+    if (loadingElement) {
+      loadingElement.classList.add('loaded');
+    }
+  }, 2000); // 2000ミリ秒（2秒）遅延
+
 
   // クラス 'spinner' の要素に対してクラスを追加
   const spinnerElements = document.getElementsByClassName('spinner');

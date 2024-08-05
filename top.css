@@ -48,7 +48,7 @@
   border-radius: 100%;
   top: 0vw; /* 60pxをvwに変換 */
   left: 0vw; /* 40pxをvwに変換 */
-  animation: sk-scaleout 1.0s ease-in-out forwards;
+  animation: sk-scaleout 1.0s ease-in-out;
   transition: all 10s;
 }
 
@@ -68,8 +68,22 @@
   transition: all 10s;
   opacity: 0;
   visibility: hidden;
-  transform: translate(0, -1000px);
+  animation: spinner00 1.0s ease-in-out forwards;
 }
+
+/* Loading Animation */
+@keyframes spinner00 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+}
+
+
 
 /* Contents Styling */
 .gallery {
